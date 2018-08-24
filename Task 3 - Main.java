@@ -1,7 +1,7 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * Напишите программу, которая выведет в файл все ссылки,
+ * которые содержатся в html документе, который будет прислан в
+ * результате запроса на произвольный URL.
  */
 package homework11b;
 

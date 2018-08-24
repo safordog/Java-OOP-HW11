@@ -46,11 +46,11 @@ public class Available {
             try {
                 URL url = new URL(address.get(i));
                 URLConnection connect = url.openConnection();
-                Map<String, List<String>> l = connect.getHeaderFields();
-                if (!l.isEmpty()) {
+                Map<String, List<String>> arr = connect.getHeaderFields();
+                if (!arr.isEmpty()) {
                     System.out.print("Site available " + address.get(i) + ": ");
-                    System.out.println(l);
-                } else if (l.isEmpty()) {
+                    System.out.println(arr);
+                } else if (arr.isEmpty()) {
                     System.out.println("!!! Site " + address.get(i) + " is not available");
                     }
             } catch (IOException e) {

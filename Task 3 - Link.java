@@ -14,6 +14,7 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 /**
  *
@@ -53,9 +54,9 @@ public class Link {
         return result;
     }
     
-    public ArrayList saveLink(String str) throws IOException {
+    public List saveLink(String str) throws IOException {
         Path out = Paths.get("links.txt");
-        ArrayList<String> array = new ArrayList<>(Arrays.asList (str));
+        List<String> array = new ArrayList<>(Arrays.asList (str));
         Files.write(out, array);
         return array;
     }

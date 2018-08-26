@@ -40,7 +40,8 @@ public class Available {
     }
     
     public void checkAvailable() throws IOException {
-        ArrayList<String> address = Files.lines(Paths.get(this.file.getName()))
+        Link<String> address = new ArrayList<>();
+        address = Files.lines(Paths.get(this.file.getName()))
                 .collect(Collectors.toCollection(ArrayList::new));
         for (int i = 0; i < address.size(); i++) {
             try {
